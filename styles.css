@@ -3,7 +3,7 @@ body {
   padding: 0;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgba(0, 0, 0, 0.824);
+  background-color: rgba(15, 15, 15, 0.824);
 }
 
 .home {
@@ -113,5 +113,69 @@ nav > div span{
 }
 
 .about {
+  text-align: center;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.91);
   
+}
+
+.about h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: 2px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.about h2 span{
+  color: rgb(9, 181, 18);
+  text-shadow: 2px 10px 5px rgba(9, 181, 18, 0.57);
+}
+
+.about .about-content{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: all 0.3s ease;
+  border: 3px solid rgba(9, 181, 18, 0);
+  box-shadow: 5px 5px 10px rgb(54, 95, 55); 
+  border-radius: 5px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.about .about-content img{
+    width: 30%;
+    height: auto; 
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.about .about-content .text{
+  width: 60%;
+  text-align: left;
+}
+
+.about .about-content .text h3{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.about .about-content .text a{
+  color: rgb(9, 181, 18);
+}
+
+.about .about-content .text p{
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5;
+
+}
+
+.about .about-content .text p span{
+  color: rgb(9, 181, 18);
+}
+
+.about .about-content:hover{
+  border: 3px solid rgb(9, 181, 18);
+  box-shadow: 5px 10px 10px rgb(36, 120, 38);
+  transform: translateY(-5px);
 }
