@@ -84,6 +84,14 @@ nav > a:hover {
 
 nav > div > h3 {
   cursor: pointer;
+  transition: all 0.3s;
+}
+nav > div > h3:hover sup {
+ color: white; 
+}
+
+nav > div > h3:hover {
+  color: rgb(9, 181, 18);
 }
 nav > div span, h4 span{
   color: rgb(9, 181, 18);
@@ -147,28 +155,24 @@ nav > div span, h4 span{
   flex-direction: column;
   gap: 20px;
   position: relative;
-  background-image: url("background2.jpg");
+  background-image: url("aait.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.about .overlay{
-  z-index: 1;
 }
 
 .about h2, .about .text, .about .about-content{
   z-index: 2;
 }
 
-.about h2{
+.about h2, .goal h2{
   font-size: 2.5rem;
   font-weight: 550;
   margin-top: 0;
   text-shadow: 2px 10px 50px white;
 }
 
-.about h2 span{
+h2 span{
   color: rgb(9, 181, 18);
   text-shadow: 2px 10px 40px rgb(9, 181, 18);
 }
@@ -255,5 +259,23 @@ nav > div span, h4 span{
   box-shadow: 0px 2px 5px rgb(27, 104, 31);;
 }
 
+.goal{
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  background-image: url("goal.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.goal h2, .goal .goal-content{
+  z-index: 2;
+}
 
