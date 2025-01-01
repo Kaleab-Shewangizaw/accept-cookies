@@ -78,10 +78,14 @@ nav > a {
   transition: all 0.3s;
 }
 
-nav > a:hover, h4 > a:hover, .about .about-content a:hover{
+nav > a:hover,
+h4 > a:hover,
+.about .about-content a:hover,
+.contact .contact-form button:hover {
   background-color: rgba(27, 104, 31, 0);
   border: solid 1px rgb(9, 181, 18);
   color: rgb(9, 181, 18);
+  box-shadow: none;
 }
 
 nav > div > h3 {
@@ -89,13 +93,14 @@ nav > div > h3 {
   transition: all 0.3s;
 }
 nav > div > h3:hover sup {
- color: white; 
+  color: white;
 }
 
 nav > div > h3:hover {
   color: rgb(9, 181, 18);
 }
-nav > div span, h4 span{
+nav > div span,
+h4 span {
   color: rgb(9, 181, 18);
 }
 
@@ -135,7 +140,6 @@ nav > div span, h4 span{
 .home .content button:hover {
   background-color: rgba(27, 104, 31, 0.834);
   box-shadow: 0px 10px 10px rgb(27, 104, 31);
-
 }
 
 .home .content button:hover i {
@@ -147,7 +151,7 @@ nav > div span, h4 span{
   margin-left: 5px;
 }
 
-.about{
+.about {
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -163,54 +167,57 @@ nav > div span, h4 span{
   background-repeat: no-repeat;
 }
 
-.about h2, .about .text, .about .about-content{
+.about h2,
+.about .text,
+.about .about-content {
   z-index: 2;
 }
 
-.about h2, .goal h2{
+.about h2,
+.goal h2 {
   font-size: 2.5rem;
   font-weight: 550;
   margin-top: 0;
   text-shadow: 2px 10px 50px white;
 }
 
-h2 span{
+h2 span {
   color: rgb(9, 181, 18);
   text-shadow: 2px 10px 40px rgb(9, 181, 18);
 }
 
-.about .text h1{
+.about .text h1 {
   font-size: 2.5rem;
   font-weight: 500;
   margin-top: 0;
   text-shadow: 2px 10px 50px rgb(255, 255, 255);
 }
 
-.about .text h1 a{
+.about .text h1 a {
   color: rgb(9, 181, 18);
   text-align: center;
   font-size: 2rem;
   text-shadow: none;
   transition: all 0.3s;
 }
-.about .text h1 .nd{
+.about .text h1 .nd {
   margin-left: 20px;
 }
-.about .text h1 a:hover{
+.about .text h1 a:hover {
   text-shadow: 2px 5px 20px rgb(9, 181, 18);
   text-decoration: none;
 }
 
-.about .text h3{
+.about .text h3 {
   margin-top: 100px;
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 0;
-  text-align:start;
+  text-align: start;
   text-shadow: 2px 10px 20px rgb(9, 181, 18);
 }
 
-.about .about-content{
+.about .about-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -218,7 +225,8 @@ h2 span{
   justify-items: center;
 }
 
-.about .about-content a, h4 a{
+.about .about-content a,
+h4 a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -231,11 +239,12 @@ h2 span{
   transition: all 0.3s;
 }
 
-.about .team h4{
+.about .team h4 {
   font-size: 1.4rem;
   font-weight: 500;
+  margin-top: 10px;
 }
-.about .a-content{
+.about .a-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,74 +255,77 @@ h2 span{
   transition: all 0.3s;
 }
 
-.about .location i{
+.about .location i {
   margin: 5px;
   color: rgb(181, 35, 9);
 }
 
-.about .team i{
+.about .team i {
   margin: 5px;
   color: rgb(9, 181, 170);
 }
 
-.about .a-content:hover{
+.about .a-content:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 2px 5px rgb(27, 104, 31);;
+  box-shadow: 0px 2px 5px rgb(27, 104, 31);
 }
 
-.goal{
+.goal {
   position: relative;
   z-index: 2;
   padding: 50px 20px;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
 }
 
-.goal .goal-content{
+.goal .goal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  position: relative;
+  margin-top: 5%;
 }
 
-.goal .goal-content img{
-  width: 75%;
-  height: 500px;
+.goal .goal-content img {
+  width: 70%;
+  height: 400px;
   border-radius: 5px;
 }
 
-.goal .goal-cards{
+.goal .goal-cards {
   display: flex;
-  justify-content: center;;
+  justify-content: center;
   gap: 5px;
   width: 75%;
   position: absolute;
-  top: 60%;
+  top: 70%;
 }
 
-.goal .goal-cards .goal-card{
- background-color: rgba(0, 0, 0, 0.766);
+.goal .goal-cards .goal-card {
+  background-color: rgba(0, 0, 0, 0.766);
   padding: 10px;
   width: 25%;
   border-radius: 5px;
   position: relative;
 }
 
-.goal .goal-cards .goal-card h3{
+.goal .goal-cards .goal-card h3 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 50px;
   text-align: center;
 }
 
-.goal .goal-cards .goal-card p{
+.goal .goal-cards .goal-card p {
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
+  color: rgb(173, 172, 172);
   margin-bottom: 50px;
 }
 
-.goal .goal-card i{
+.goal .goal-card i {
   position: absolute;
   top: -35px;
   left: 50%;
@@ -329,9 +341,109 @@ h2 span{
   color: rgb(9, 181, 18);
 }
 
-.goal .goal-cards .goal-card:hover i{
-  background-color: rgba(9, 181, 18, 0.759);
+.goal .goal-cards .goal-card:hover i {
+  background-color: rgba(5, 166, 13, 0.638);
+  border: white solid 2px;
   color: white;
-  box-shadow: 2px 2px 5px rgb(9, 181, 18);
+  box-shadow: 2px 2px 5px black;
   transition: all 0.3s;
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20%;
+  margin: 0;
+  grid-template-rows: auto auto;
+  gap: 20px 20px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.contact .contact-section{
+  width: 100%;
+  display: flex;
+  grid-row: 1/4;
+
+}
+
+.contact .contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contact .contact-form input{
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.contact .contact-form button{
+  padding: 10px 20px;
+  background-color: rgb(9, 181, 18);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+.contact label{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  align-self: start;
+  margin-bottom: 0;
+  margin-top: 10px;
+  
+}
+
+
+.contact .contact-form textarea{
+  width: 70%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.contact .sign-in-icons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.contact .socials .social-icons{
+  font-size: 1.5rem;
+}
+
+.contact i{
+  cursor: pointer;
+  color: rgb(82, 156, 85);
+}
+
+.contact i:hover{
+  color: rgb(0, 229, 11);
+  transition: all 0.3s ease;
+}
+
+.contact .bottom-logo h4{
+  font-size: 4rem;
 }
