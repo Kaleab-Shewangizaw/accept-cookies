@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgba(4, 4, 4, 0.891)
+  background-color: rgba(4, 4, 4, 0.676);
+  position: relative;
+  color: white;
 }
 
 .home {
@@ -76,7 +78,7 @@ nav > a {
   transition: all 0.3s;
 }
 
-nav > a:hover {
+nav > a:hover, h4 > a:hover, .about .about-content a:hover{
   background-color: rgba(27, 104, 31, 0);
   border: solid 1px rgb(9, 181, 18);
   color: rgb(9, 181, 18);
@@ -216,7 +218,7 @@ h2 span{
   justify-items: center;
 }
 
-.about .about-content a{
+.about .about-content a, h4 a{
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -260,22 +262,76 @@ h2 span{
 }
 
 .goal{
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
   position: relative;
-  background-image: url("goal.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.goal h2, .goal .goal-content{
   z-index: 2;
+  padding: 50px 20px;
+  text-align: center;
+  height: 100vh;
 }
 
+.goal .goal-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.goal .goal-content img{
+  width: 75%;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.goal .goal-cards{
+  display: flex;
+  justify-content: center;;
+  gap: 5px;
+  width: 75%;
+  position: absolute;
+  top: 60%;
+}
+
+.goal .goal-cards .goal-card{
+ background-color: rgba(0, 0, 0, 0.766);
+  padding: 10px;
+  width: 25%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.goal .goal-cards .goal-card h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.goal .goal-cards .goal-card p{
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.goal .goal-card i{
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.895);
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: rgb(9, 181, 18);
+}
+
+.goal .goal-cards .goal-card:hover i{
+  background-color: rgba(9, 181, 18, 0.759);
+  color: white;
+  box-shadow: 2px 2px 5px rgb(9, 181, 18);
+  transition: all 0.3s;
+}
