@@ -1,1 +1,2 @@
-alert('hello world')
+
+const donation = document.getElementById('donation');
