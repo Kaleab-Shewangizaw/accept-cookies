@@ -4,6 +4,8 @@ const formEl = document.getElementById("donation-form");
 const btns = document.getElementById("btns");
 const declineBtn = document.getElementById("decline-btn");
 const donTxt = document.getElementById("don-text")
+const innerFormEl = document.getElementById('inner-form')
+const telegramBtn = document.getElementById('fa-telegram')
 
 close.disabled = true;
 
@@ -39,3 +41,11 @@ formEl.addEventListener("submit", (e) => {
 declineBtn.addEventListener("mouseover", () => {
   btns.classList.toggle("reverse");
 });
+
+innerFormEl.addEventListener('submit', (e)=>{
+  e.preventDefault()
+})
+
+telegramBtn.addEventListener('click', ()=>{
+  window.open('https://t.me/kal_ab_s', '_blank')
+})
