@@ -543,5 +543,100 @@ h4 a {
   }
 }
 
+.donation{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 20px;
+  text-align: left;
+  width: 40%;
+  height: 500px;
+  z-index: 4;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.978);
+  font-size: 1.2rem;
+}
 
+.donation h2{
+  font-size: 2rem;
+  font-weight: 500;
+}
 
+.donation .close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.donation .close-btn:hover{
+  color: rgb(236, 1, 1);
+  background-color: black;
+
+}
+
+.donation .close-btn:disabled{
+  cursor: not-allowed;
+}
+
+.donation .close-btn:disabled:hover{
+  color: black;
+  background-color: rgb(114, 109, 109);
+}
+
+.donation #donation-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.donation #donation-form input{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(242, 242, 242, 0.5);
+  color: white;
+  font-size: larger;
+  width: 70%;
+}
+
+.donation #donation-form button{
+  padding: 10px 20px;
+  background-color: rgb(9, 181, 18);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.donation #donation-form button:hover{
+  background-color: rgb(6, 255, 2);
+  transition: all 0.3s ease;
+}
+
+.btns{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.u-name{
+  color: rgb(6, 255, 2);
+  font-size: 1.5rem;
+  display: inline;
+}

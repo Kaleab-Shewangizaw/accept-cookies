@@ -147,16 +147,20 @@
     </footer>
 
     <div id="donation" class="donation">
-      <h2>Welcome</h2>
+      <button class="close-btn" id="close-btn">X</button>
+      <div class="text" id="don-text">
+        <h2>Welcome</h2>
       <p>Thank you for your interest. Please fill out the form below to continue.</p>
+      </div>
       <form action="" id="donation-form">
         <label for="d-name">Name</label>
-        <input type="text" name="d-name" id="d-name" />
+        <input type="text" name="d-name" id="d-name"  />
         <label for="d-email">Email</label>
         <input type="email" name="d-email" id="d-email" />
-        <button class="">Accept</button>
-        <button>Decline</button>
-
+        <div class="btns" id="btns">
+          <button class="" id="accept-btn">Accept</button>
+          <button class="decline-btn" id="decline-btn" type="button">Decline</button>
+        </div>
       </form>
       </button>
     </div>
