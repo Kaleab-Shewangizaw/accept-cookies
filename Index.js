@@ -44,7 +44,19 @@ declineBtn.addEventListener("mouseover", () => {
 
 innerFormEl.addEventListener('submit', (e)=>{
   e.preventDefault()
-})
+  const data = new FormData(innerFormEl)
+  const fname = data.get('fname')
+
+  if(fname.trim() === ""){
+    alert("Please enter your name.")
+    return;
+  }
+  else{
+    innerFormEl.innerHTML = "Please wait...";
+    setTimeout(()=>{
+      innerFormEl.innerHTML = `Thank you,
+      <p class = "u-name">${fname}</p> for the comment`
+}, 3000)}})
 
 telegramBtn.addEventListener('click', ()=>{
   window.open('https://t.me/kal_ab_s', '_blank')
