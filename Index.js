@@ -6,6 +6,13 @@ const declineBtn = document.getElementById("decline-btn");
 const donTxt = document.getElementById("don-text")
 const innerFormEl = document.getElementById('inner-form')
 const telegramBtn = document.getElementById('fa-telegram')
+const startLngBtn = document.getElementById('start-learning')
+
+startLngBtn.addEventListener('click', ()=>{
+  window.open('https://t.me/noobiecoders', '_blank')
+})
+
+
 
 close.disabled = true;
 
