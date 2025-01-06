@@ -7,12 +7,27 @@ const donTxt = document.getElementById("don-text")
 const innerFormEl = document.getElementById('inner-form')
 const telegramBtn = document.getElementById('fa-telegram')
 const startLngBtn = document.getElementById('start-learning')
+const getStartedBtn = document.getElementById('get-started-btn')
+const closeBtn = document.getElementById('close-btn')
 
 startLngBtn.addEventListener('click', ()=>{
   window.open('https://t.me/noobiecoders', '_blank')
 })
 
+getStartedBtn.addEventListener('click', ()=>{
+  donation.style.display = "flex"
+  donation.innerHTML = `<h2>please wait</h2>`
+  setTimeout(()=>{
+    donation.innerHTML = `<h2>Welcome</h2>
+    <h3>We are working on it</h3>
+    <button id="close-btn">Close</button>`
+}, 3000)
 
+closeBtn.addEventListener('click', ()=>{
+  donation.style.display = "none"
+})
+
+})
 
 close.disabled = true;
 
