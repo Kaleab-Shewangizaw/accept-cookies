@@ -16,10 +16,10 @@ startLngBtn.addEventListener('click', ()=>{
 
 getStartedBtn.addEventListener('click', ()=>{
   donation.style.display = "flex"
-  donation.innerHTML = `<h2>please wait</h2>`
+  donation.innerHTML = `<h2>please wait...</h2>`
   setTimeout(()=>{
     donation.innerHTML = `<h2>Welcome</h2>
-    <h3>We are working on it</h3>
+    <h3>We are working on it.</h3>
     <button id="close-btn">Close</button>`
 }, 3000)
 
