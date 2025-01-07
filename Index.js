@@ -68,10 +68,14 @@ innerFormEl.addEventListener('submit', (e)=>{
   e.preventDefault()
   const data = new FormData(innerFormEl)
   const fname = data.get('fname')
+  const femail = data.get('femail')
 
   if(fname.trim() === ""){
     alert("Please enter your name.")
     return;
+  }
+  else if(femail.trim() === ""){
+    alert ("Please enter your email.")
   }
   else{
     innerFormEl.innerHTML = "Please wait...";
