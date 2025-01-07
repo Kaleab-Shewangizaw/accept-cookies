@@ -350,7 +350,7 @@ h4 a {
   transition: all 0.3s;
 }
 
-.contact{
+.contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -365,15 +365,14 @@ h4 a {
   text-align: center;
 }
 
-.contact .contact-section{
+.contact .contact-section {
   width: 100%;
   display: flex;
   grid-row: 1/4;
   margin-top: 0;
-
 }
 
-.contact .contact-form{
+.contact .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,7 +385,7 @@ h4 a {
   margin-top: 0;
 }
 
-.contact .contact-form input{
+.contact .contact-form input {
   width: 70%;
   padding: 10px;
   border-radius: 5px;
@@ -395,7 +394,7 @@ h4 a {
   color: white;
 }
 
-.contact .contact-form button{
+.contact .contact-form button {
   padding: 10px 20px;
   background-color: rgb(9, 181, 18);
   border: none;
@@ -406,18 +405,16 @@ h4 a {
   margin-top: 10px;
   transition: all 0.3s;
 }
-.contact label{
+.contact label {
   font-size: 1.2rem;
   font-weight: 500;
   color: white;
   align-self: start;
   margin-bottom: 0;
   margin-top: 10px;
-  
 }
 
-
-.contact .contact-form textarea{
+.contact .contact-form textarea {
   width: 70%;
   height: 100px;
   padding: 10px;
@@ -427,31 +424,31 @@ h4 a {
   color: white;
 }
 
-.contact .sign-in-icons{
+.contact .sign-in-icons {
   display: flex;
   gap: 20px;
   justify-content: center;
   font-size: 1.2rem;
 }
-.contact .socials .social-icons{
+.contact .socials .social-icons {
   font-size: 1.5rem;
 }
 
-.contact i{
+.contact i {
   cursor: pointer;
   color: rgb(82, 156, 85);
 }
 
-.contact i:hover{
+.contact i:hover {
   color: rgb(6, 255, 2);
   transition: all 0.3s ease;
 }
 
-.contact .bottom-logo h4{
+.contact .bottom-logo h4 {
   font-size: 4rem;
 }
 
-.footer{
+.footer {
   position: relative;
   z-index: 2;
   margin-bottom: 0;
@@ -461,89 +458,100 @@ h4 a {
   background-color: black;
 }
 
-#fsubmit{
+#fsubmit {
   border: 1px solid rgb(9, 181, 18);
 }
 
-@media screen and (max-width: 990px){
-  .home nav li, .home nav a{
+@media screen and (max-width: 990px) {
+  .home {
+    height: 70vh;
+  }
+  .home nav li,
+  .home nav a {
     display: none;
   }
-  .home .content > h1{
+  .home .content > h1 {
     font-size: 3rem;
   }
-  .home .content > p{
+  .home .content > p {
     width: 80%;
   }
-  .home .content button{
+  .home .content button {
     margin-top: 50px;
   }
-  .about .text h1{
-    font-size: 2rem;
+  .about .text h1 {
+    font-size: 3rem;
   }
-  .about .text h1 a{
+  .about .text h1 a {
     font-size: 1.5rem;
   }
-  .about .text h3{
+  .about .text h3 {
     font-size: 1.2rem;
   }
   .about .about-content a,
-  h4 a{
+  h4 a {
     font-size: 1rem;
   }
-  .about .team h4{
+  .about .team h4 {
     font-size: 1.2rem;
   }
-  .goal{
-    height: 70vh;
+  .goal {
+    height: 60vh;
   }
-  .goal .goal-content img{
+  .goal .goal-content img {
     width: 90%;
     height: 300px;
   }
-  .goal .goal-cards .goal-card h3{
+  .goal .goal-cards .goal-card h3 {
     font-size: 1.1rem;
   }
-  .goal .goal-cards{
+  .goal .goal-cards {
     top: 60%;
+    width: 100%;
   }
-  .goal .goal-cards .goal-card{
-    width: fit-content;
-    
+  .goal .goal-cards .goal-card {
+    width: 100%;
   }
-  .goal .goal-cards .goal-card p{
-    font-size: 0.9rem;
-  }
-  .goal .goal-cards .goal-card i{
-    font-size: 1.2rem;
-  }
-  .contact .contact-form input,
-  .contact .contact-form textarea{
-    width: 90%;
-  }
-  .contact .contact-form button{
-    padding: 10px 15px;
-  }
-  .contact label{
+  .goal .goal-cards .goal-card p {
     font-size: 1rem;
   }
-  .contact .contact-section{
+  .goal .goal-cards .goal-card i {
+    font-size: 1.2rem;
+  }
+  .contact {
+    margin-top: 0px;
+  }
+  .contact .contact-form input,
+  .contact .contact-form textarea {
+    width: 90%;
+  }
+  .contact .contact-form button {
+    padding: 10px 15px;
+  }
+  .contact label {
+    font-size: 1rem;
+  }
+  .contact .contact-section {
     width: 150%;
   }
-  
+  .donation {
+    width: 70%;
+    top: 40%;
+    left: 20%;
+  }
 }
 
-@media screen and (max-width: 1400px){
-  .contact{
+@media screen and (max-width: 1400px) {
+  .contact {
     display: flex;
     flex-direction: column;
   }
-  .contact .contact-section{
+  .contact .contact-section {
     width: 90%;
   }
 }
 
-.donation{
+.donation {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -562,12 +570,12 @@ h4 a {
   font-size: 1.2rem;
 }
 
-.donation h2{
+.donation h2 {
   font-size: 2rem;
   font-weight: 500;
 }
 
-.donation .close-btn{
+.donation .close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -576,71 +584,75 @@ h4 a {
   transition: all 0.3s;
 }
 
-.donation .close-btn:hover{
+.donation .close-btn:hover {
   color: rgb(236, 1, 1);
   background-color: black;
-
 }
 
-.donation .close-btn:disabled{
+.donation .close-btn:disabled {
   cursor: not-allowed;
 }
 
-.donation .close-btn:disabled:hover{
+.donation .close-btn:disabled:hover {
   color: black;
   background-color: rgb(114, 109, 109);
 }
 
-.donation #donation-form{
+.donation #donation-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.donation #donation-form input{
+.donation #donation-form input {
   padding: 10px;
   border-radius: 5px;
   border: none;
   background-color: rgba(242, 242, 242, 0.5);
   color: white;
-  font-size: larger;
   width: 70%;
 }
 
-.donation #donation-form button{
+.donation #donation-form button {
   padding: 10px 20px;
   background-color: rgb(9, 181, 18);
   border: none;
   border-radius: 5px;
   color: white;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-.donation #donation-form button:hover{
-  background-color: rgb(6, 255, 2);
+.donation #donation-form button:hover {
+  background-color: rgba(6, 255, 2, 0.594);
   transition: all 0.3s ease;
 }
 
-.btns{
+.btns {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: start;
 }
 
-.reverse{
+.reverse {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.u-name{
+.u-name {
   color: rgb(6, 255, 2);
   font-size: 1.5rem;
   display: inline;
 }
 
-#fa-telegram{
+#fa-telegram {
   font-size: 2.5rem;
+}
+
+.warning{
+  color: rgb(186, 18, 18);
+  font-size: rem;
 }

@@ -47,7 +47,7 @@ formEl.addEventListener("submit", (e) => {
     formEl.style.display = "none";
     donTxt.innerHTML = "Please wait ...";
     setTimeout(() => {
-      donTxt.innerHTML = `haha you got hacked 
+      donTxt.innerHTML = `😈hahaha😈 <br/> you got hacked 
     <p class = "u-name">${name}</p>, thank you for the donation of <p class= "u-name">$5000</p>.`;
       close.disabled = false;
     }, 3000);
@@ -55,9 +55,21 @@ formEl.addEventListener("submit", (e) => {
 });
 
 //I want to do toogle clss on hover over the declineBtn
-
+let hoverCount = 0
 declineBtn.addEventListener("mouseover", () => {
+  hoverCount++
   btns.classList.toggle("reverse");
+  if (hoverCount == 5){
+    donTxt.innerHTML += `<h3 class = "warning" id = "warning">You got only one option 😈😈</h3>`
+  }
+  else if (hoverCount == 10){
+    document.getElementById("warning").style.color = "yellow"
+    document.getElementById("warning").innerHTML = "I am kidding, Please don't goooo... 🥺"
+  }
+  if(hoverCount >= 10){
+    btns.classList.remove('reverse')
+  }
+  console.log(hoverCount)
 });
 
 
