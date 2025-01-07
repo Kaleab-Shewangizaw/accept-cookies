@@ -16,10 +16,11 @@ startLngBtn.addEventListener("click", () => {
 
 getStartedBtn.addEventListener("click", () => {
   donation.style.display = "flex";
-  donTxt.innerHTML = `<h2>please wait</h2>`;
+  donTxt.innerHTML = `<h2>please wait...</h2>`;
   setTimeout(() => {
     donTxt.innerHTML = `<h2>Welcome</h2>
-    <h3>We are working on it</h3>`
+    <h3>We are working on it.</h3>
+    <h3>You can start learning on telegram.</h3>`
   }, 3000);
   
 });
