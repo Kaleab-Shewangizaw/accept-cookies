@@ -59,15 +59,21 @@ declineBtn.addEventListener("mouseover", () => {
   btns.classList.toggle("reverse");
 });
 
-innerFormEl.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const data = new FormData(innerFormEl);
-  const fname = data.get("fname");
+
+innerFormEl.addEventListener('submit', (e)=>{
+  e.preventDefault()
+  const data = new FormData(innerFormEl)
+  const fname = data.get('fname')
+  const femail = data.get('femail')
 
   if (fname.trim() === "") {
     alert("Please enter your name.");
     return;
-  } else {
+  }
+  else if(femail.trim() === ""){
+    alert ("Please enter your email.")
+  }
+  else{
     innerFormEl.innerHTML = "Please wait...";
     setTimeout(() => {
       innerFormEl.innerHTML = `Thank you,
@@ -79,3 +85,4 @@ innerFormEl.addEventListener("submit", (e) => {
 telegramBtn.addEventListener("click", () => {
   window.open("https://t.me/kal_ab_s", "_blank");
 });
+
